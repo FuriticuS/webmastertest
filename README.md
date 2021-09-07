@@ -1,24 +1,26 @@
-# webmastertest
+# Тестовое задание на должность Верстальщика/Frontend-разработчика
 
-## Project setup
-```
-npm install
-```
+### Материалы
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Текущий шаблон (html + webpack)
+- [Макет](https://www.figma.com/file/TnOJ3PAga8LNTxh5CDEUJV/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?node-id=0%3A1)
+- Датасет для списка концертов (src/dataset.json)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Цель задания
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Сверстать веб-страницу по макету
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Условия задания
+
+- Предусматривается использование Vue.js. Как именно и для чего — на усмотрение разработчика.
+- Использовать текущий шаблон (не готовый `vue create`)
+- Допускается использовать препроцессоры
+- Логику поведения, нажатия на кнопки и т.д. — прорабатывать не нужно. Только внешний вид.
+- Изображения можно взять из макета либо [Unsplash Random](https://source.unsplash.com/random/)
+- Будет оцениваться точность исполнения, аккуратность, внимание к деталям, умение писать грамотный CSS, применять JS и фреймворки.
+
+### Инструкция по развёртыванию
+
+1. Установить node и npm, если отсутствуют
+2. Из каталога с шаблоном выполнить `npm install`
+3. Использовать `npm run watch`/`npm run build` при разработке

@@ -1,0 +1,19 @@
+@import "resetstyles";
+@import "variables";
+@import "adaptive";
+
+body {
+  background: $main-bg;
+}
+
+.btn {
+  padding: 11px 16px;
+  background: $main-blue;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+}
