@@ -1,25 +1,30 @@
 <template>
   <div class="wrapper">
-    <Menu />
-    <Events/>
-    <About />
+    <Sidebar />
+    <Events />
+    <Description />
   </div>
     <router-view/>
 </template>
 
 <script>
-import Menu from "@/components/menu/Menu";
-import Events from "@/components/events/Events";
-import About from "@/components/about/About";
+import Events from '@/components/events/Events'
+import Description from '@/components/description/Description'
+import Sidebar from '@/components/sidebar/Sidebar'
 
 export default {
-  components: {About, Events, Menu}
+  components: { Sidebar, Description, Events }
 }
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
+
 .wrapper{
   display: flex;
   flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 </style>

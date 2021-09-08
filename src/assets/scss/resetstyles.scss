@@ -185,3 +185,36 @@ h2 {
 	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: #000000;
 }
+
+.btn-active {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	border:none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn-pre-order {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 16px;
+	background: #0085FF;
+	border-radius: 8px;
+	border:none;
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #FFFFFF;
+	outline: none;
+	cursor: pointer;
+}
