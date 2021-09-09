@@ -39,7 +39,8 @@ export default {
     group: String,
     address: String,
     index: Number,
-    active: Boolean
+    active: Boolean,
+    activeImg: Boolean
   },
   computed: {
     classes () {
@@ -54,7 +55,7 @@ export default {
       const classed = [
         'event-img'
       ]
-      return this.active
+      return this.activeImg
         ? [...classed, 'event-img-active']
         : [...classed]
     }
