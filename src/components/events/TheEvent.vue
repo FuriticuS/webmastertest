@@ -9,12 +9,12 @@
           <span>{{ numb }}</span>
         </div>
       </div>
-      <div class="event-img">
-        <img :src="`${{ src }}`" alt="event">
+      <div :class="classed">
+        <img :src="src" alt="event">
       </div>
     </div>
     <div class="event-name">
-      <h3>{{ group }}</h3>
+      <h3>{{ label }}</h3>
       <div class="event-coord">
         <BaseIcon name="coord"/>
         <div class="event-coord-text">
@@ -38,17 +38,25 @@ export default {
     src: String,
     group: String,
     address: String,
-    index: Number
+    index: Number,
+    active: Boolean
   },
   computed: {
     classes () {
       const classes = [
         'event'
       ]
-      console.log(this)
-      return this.isActive
+      return this.active
         ? [...classes, 'event-active']
         : [...classes]
+    },
+    classed () {
+      const classed = [
+        'event-img'
+      ]
+      return this.active
+        ? [...classed, 'event-img-active']
+        : [...classed]
     }
   }
 }
