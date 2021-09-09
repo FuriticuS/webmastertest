@@ -1,19 +1,19 @@
 <template>
   <div class="wrapper">
-    <Sidebar />
-    <Events />
-    <Description />
+    <TheSidebar />
+    <TheEvents />
+    <TheDescription />
   </div>
     <router-view/>
 </template>
 
 <script>
-import Events from '@/components/events/Events'
-import Description from '@/components/description/Description'
-import Sidebar from '@/components/sidebar/Sidebar'
+import TheEvents from '@/components/events/TheEvents'
+import TheDescription from '@/components/description/TheDescription'
+import TheSidebar from '@/components/sidebar/TheSidebar'
 
 export default {
-  components: { Sidebar, Description, Events }
+  components: { TheSidebar, TheDescription, TheEvents }
 }
 </script>
 

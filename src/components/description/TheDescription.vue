@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Order from '@/components/order/Order'
+import Order from '@/components/order/TheOrder'
 
 export default {
   name: 'Description',
