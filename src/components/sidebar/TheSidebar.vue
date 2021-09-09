@@ -2,25 +2,40 @@
   <div class="navigation">
     <div id="nav">
       <button class="btn-active">
-        <img src="@/assets/img/nav/burger.svg" alt="burger">
+        <BaseIcon name="burger" class="btn-active-icon"/>
       </button>
       <div class="nav-title">
-        <img src="@/assets/img/nav/bibi.svg" alt="Бибилька">
+        <BaseIcon name="bibi" class="nav-title-icon"/>
         <h2>Бибилька</h2>
       </div>
       <div class="nav-links">
-          <router-link to="/" class="link-active"><img src="@/assets/img/nav/tickets.svg" alt=""><span>Билеты</span></router-link>
-          <router-link to="/news"><img src="@/assets/img/nav/news.svg" alt=""><span>Новости</span></router-link>
-          <router-link to="/video"><img src="@/assets/img/nav/video.svg" alt=""><span>Видео</span></router-link>
-          <router-link to="/auth"><img src="@/assets/img/nav/exit.svg" alt=""><span>Выход</span></router-link>
+          <router-link to="/" class="link-active">
+            <BaseIcon name="tickets" class="nav-icon"/>
+            <span>Билеты</span>
+          </router-link>
+          <router-link to="/news">
+            <BaseIcon name="news" class="nav-icon"/>
+            <span>Новости</span>
+          </router-link>
+          <router-link to="/video">
+            <BaseIcon name="video" class="nav-icon"/>
+            <span>Видео</span>
+          </router-link>
+          <router-link to="/auth">
+            <BaseIcon name="exit" class="nav-icon"/>
+            <span>Выход</span>
+          </router-link>
         </div>
     </div>
   </div>
 </template>
 
 <script>
+import BaseIcon from '@/components/baseicon/BaseIcon'
+
 export default {
   name: 'Sidebar',
+  components: { BaseIcon },
   props: {
     label: String,
     icon: String
@@ -46,6 +61,7 @@ export default {
     .nav-title {
       display: flex;
       flex-direction: row;
+      align-items: center;
       padding-left: 33px;
       margin: 25px 0;
       h2{

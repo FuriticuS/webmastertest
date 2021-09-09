@@ -237,9 +237,15 @@
         </div>
       </div>
       <TheEvent v-for='event in events'
-                :key="event"
-                :index="event"
-                :is-active="event === '1'"/>
+                :key="event.label"
+                :label="event.label"
+                :day="event.day"
+                :numb="event.numb"
+                :src="event.src"
+                :group="event.group"
+                :address="event.address"
+                :index="event.id"
+                :is-active="event.active === true"/>
     </div>
   </div>
 </template>
@@ -252,15 +258,26 @@ export default {
   data () {
     return {
       events: [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9'
+        {
+          id: 1,
+          label: 'Концерт Gorillaz',
+          day: 'Пн',
+          numb: 10,
+          src: '@/assets/img/events/event/1.png',
+          group: 'Guns N` Roses',
+          address: '2972 Westheimer Rd. Santa Ana, Illinois 85486',
+          active: true
+        },
+        {
+          id: 2,
+          label: 'Концерт Gorillaz',
+          day: 'Вт',
+          numb: '11',
+          src: '@/assets/img/events/event/2.png',
+          group: 'Bruce Springsteen and the E Street...',
+          address: '1901 Thornridge Cir. Shiloh, Hawaii 81063',
+          active: false
+        }
       ]
     }
   }

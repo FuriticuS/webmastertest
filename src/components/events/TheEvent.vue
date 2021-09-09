@@ -3,24 +3,22 @@
     <div class="event-date">
       <div class="event-date-time">
         <div class="event-day">
-          <span>Вт</span>
+          <span>{{ day }}</span>
         </div>
         <div class="event-numb">
-          <span>18</span>
+          <span>{{ numb }}</span>
         </div>
       </div>
       <div class="event-img">
-        <img :src="`/img/events/event/${event}.png`" alt="event">
+        <img :src="`${{ src }}`" alt="event">
       </div>
     </div>
     <div class="event-name">
-      <h3>Guns N` Roses</h3>
+      <h3>{{ group }}</h3>
       <div class="event-coord">
-        <div class="event-coord-img">
-          <img src="@/assets/img/events/coord.svg" alt="coord">
-        </div>
+        <BaseIcon name="coord"/>
         <div class="event-coord-text">
-          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+          <p>{{ address }}</p>
         </div>
       </div>
     </div>
@@ -28,14 +26,26 @@
 </template>
 
 <script>
+import BaseIcon from '@/components/baseicon/BaseIcon'
+
 export default {
   name: 'TheEvent',
-  props: ['event', 'isActive'],
+  components: { BaseIcon },
+  props: {
+    label: String,
+    day: String,
+    numb: Number,
+    src: String,
+    group: String,
+    address: String,
+    index: Number
+  },
   computed: {
     classes () {
       const classes = [
         'event'
       ]
+      console.log(this)
       return this.isActive
         ? [...classes, 'event-active']
         : [...classes]
@@ -160,17 +170,6 @@ export default {
       .event-coord {
         display: flex;
         flex-direction: row;
-
-        .event-coord-img {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 16px;
-          height: 16px;
-          margin-right: 6px;
-        }
-
         .event-coord-text {
           p {
             font-style: normal;
