@@ -35,7 +35,7 @@ export default {
       if (this.isElVisible) {
         this.isElVisible = false
         this.isElPhoneVisible = true
-        events.style.width = '196px'
+        events.style.width = '212px'
         event.forEach(n => n.classList.add('block-column'))
       } else {
         this.isElVisible = true
