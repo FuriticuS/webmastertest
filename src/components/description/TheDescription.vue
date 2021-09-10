@@ -48,14 +48,18 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 38px;
+    width: 142px;
+    height: 48px;
     padding: 8px;
     margin-bottom: 32px;
+    background: $link-active-bg;
+    border-radius: 8px;
     .description-organizer-img{
       display: flex;
       width: 32px;
       height: 32px;
       margin-right: 11px;
+      margin-bottom: 0;
       border-radius: 8px;
       overflow: hidden;
       img{

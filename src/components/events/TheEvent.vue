@@ -193,6 +193,12 @@ export default {
       }
     }
   }
+  .block-column {
+    flex-direction: column;
+    .event-date{
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .event-active {
