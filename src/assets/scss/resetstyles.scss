@@ -1,3 +1,5 @@
+@import "variables";
+
 /*---------------- reset all stiles ----------------------*/
 html,
 body,
@@ -186,6 +188,10 @@ h2 {
 	color: #000000;
 }
 
+*:hover {
+	transition: all .3s ease;
+}
+
 .btn-active {
 	display: flex;
 	flex-direction: column;
@@ -199,13 +205,27 @@ h2 {
 	cursor: pointer;
 }
 
+.btn-active svg {
+	stroke: $main-black;
+}
+
+.btn-active:hover svg {
+	stroke: $main-black;
+	opacity: 0.66;
+}
+
+.btn-active:active svg {
+	stroke: $main-black;
+	opacity: 0.33;
+}
+
 .btn-pre-order {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 11px 16px;
-	background: #0085FF;
+	background: $main-blue;
 	border-radius: 8px;
 	border:none;
 	font-family: "Raleway", sans-serif;
@@ -214,7 +234,19 @@ h2 {
 	font-size: 16px;
 	line-height: 19px;
 	font-feature-settings: 'pnum' on, 'lnum' on;
-	color: #FFFFFF;
+	color: $main-bg;
 	outline: none;
 	cursor: pointer;
+}
+
+.btn-pre-order:hover {
+	transition: all .3s ease;
+	background: $main-blue;
+	opacity: 0.66;
+}
+
+.btn-pre-order:focus {
+	transition: all .3s ease;
+	background: $main-blue;
+	opacity: 0.33;
 }

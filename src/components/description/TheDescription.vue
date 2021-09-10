@@ -88,6 +88,10 @@ export default {
         color: $main-blue;
       }
     }
+    &:hover .description-organizer-name{
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
   .description-organizer-img{
     display: flex;

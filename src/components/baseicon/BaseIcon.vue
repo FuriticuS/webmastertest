@@ -1,7 +1,6 @@
 <template>
   <div :class="$attrs.class || 'event-coord-img'">
     <svg
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       v-html="path"
     >
@@ -37,6 +36,9 @@ export default {
   svg{
     width: 14px;
     height: 14px;
+    &:hover {
+      fill: red;
+    }
   }
 }
 

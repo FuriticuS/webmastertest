@@ -9,7 +9,7 @@ export default {
     '<path fill-rule="evenodd" clip-rule="evenodd" d="M13.9603 5.03968C14.2532 5.33257 14.2532 5.80744 13.9603 6.10034L8.96026 11.1003C8.66737 11.3932 8.19249 11.3932 7.8996 11.1003C7.60671 10.8074 7.60671 10.3326 7.8996 10.0397L12.8996 5.03968C13.1925 4.74678 13.6674 4.74678 13.9603 5.03968Z" fill="#323232"/>\n' +
     '<circle cx="8.5" cy="5.5" r="1" fill="#323232"/>\n' +
     '<circle cx="13.5" cy="10.5" r="1" fill="#323232"/>',
-  burger: '<path d="M6.4978 13H19.5029" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
-    '<path d="M6.4978 17.0017H19.5029" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
-    '<path d="M6.49731 8.99832H19.5024" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>'
+  burger: '<path d="M6.4978 13H19.5029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+    '<path d="M6.4978 17.0017H19.5029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+    '<path d="M6.49731 8.99832H19.5024"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>'
 }
